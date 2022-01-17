@@ -10,6 +10,8 @@ using namespace std;
 int main()
 {
 	system("cls");
+	//Code untuk memberikan warna merah pada text
+	system("COLOR 4");
 	//Variable character
 	char jawaban, a;
 
@@ -49,6 +51,10 @@ int main()
 		cout << endl;
 		cout << " Masukkan Jawaban Anda: ";
 		cin >> jawaban;
+		/*
+		Jika jawaban benar
+		Code dibawah akan dijalankan
+		*/
 		if (jawaban == 'C')
 		{
 			system("cls");
@@ -56,6 +62,10 @@ int main()
 			cout << " Soal selanjutnya " << endl;
 			cout << endl;
 		}
+		/*
+		Jika jawaban salah
+		Code dibawah akan dijalankan
+		*/
 		else if (jawaban != 'C')
 		{
 			system("cls");
@@ -143,6 +153,7 @@ int main()
 		cin >> jawaban;
 		if (jawaban == 'B')
 		{
+			//Code quiz berakhir
 			system("cls");
 			cout << "**********************************************************" << endl;
 			cout << "------------ SELAMAT JAWABAN ANDA BENAR SEMUA ------------" << endl;
@@ -158,6 +169,7 @@ int main()
 		}
 		
 	}
+	//Code akan dijalankan bila user mengetik 'T'
 	else if (jawaban == 'T')
 	{
 		system("cls");
